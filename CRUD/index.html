@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="crud-container">
+        <h2>CRUD Application</h2>
+    
+        <form id="crud-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+    
+          <label for="age">Age:</label>
+          <input type="number" id="age" required>
+    
+          <button type="button" onclick="createData()">Create</button>
+        </form>
+    
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Table content will be dynamically populated here -->
+          </tbody>
+        </table>
+      </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
